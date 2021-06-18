@@ -65,6 +65,7 @@ class DetailProdukActivity : AppCompatActivity() {
         tv_harga.text = Helper().gantiRupiah(produk.harga)
         tv_deskripsi.text = produk.deskripsi
 
+        //pemanggilan gambar
         val img = "http://192.168.1.8/tokojuanda/public/storage/produk/" + produk.image
         Picasso.get()
             .load(img)
